@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_BOOT_COMPLETED);
+        intent.setAction(Intent.ACTION_MANAGE_NETWORK_USAGE);
+        sendBroadcast(intent);
     }
 
 
